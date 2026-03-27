@@ -3,8 +3,7 @@
 Welcome to my personal portfolio website built with **React.js**, **Framer Motion**, and **modern UI design** principles.
 It showcases my work, projects, skills, and journey as a **Full Stack Developer** passionate about building scalable web applications.
 
-🌐 **Live Website:** [Coming Soon]
-
+🌐 **Live Website:** (https://dhruv-portfolio-virid.vercel.app/)
 ---
 
 ## 🚀 Features
