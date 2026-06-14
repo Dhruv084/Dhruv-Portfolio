@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
-import "./blog.css";
+import "../CSS/blog.css";
 
 export default function Blog() {
   const defaultPosts = [

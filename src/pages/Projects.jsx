@@ -10,6 +10,14 @@ const PROJECTS = [
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
     live: 'https://document-management-system-tan.vercel.app/',
     code: 'https://github.com/Dhruv084'
+  },
+  {
+    title: '🚚 FleetFlow',
+    desc: 'FleetFlow is a real-time fleet and logistics platform that tracks vehicles, optimizes routes, manages deliveries, and improves efficiency.',
+    ss: '/FleetFlow.jpg',
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+    live: 'https://fleet-flow-navy.vercel.app/login',
+    code: 'https://github.com/Dhruv084'
   }
 ]
 

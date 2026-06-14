@@ -9,6 +9,7 @@
 }
 *{box-sizing:border-box}
 html,body,#root{height:100%}
+html{scroll-behavior:smooth}
 body{
   margin:0;
   background: radial-gradient(800px 500px at 10% 10%, rgba(124,58,237,0.08), transparent 10%),
@@ -77,30 +78,6 @@ body{
 /* agree/disagree buttons */
 .vote-btn{padding:8px 10px;border-radius:10px;border:none;background:transparent;color:var(--muted);font-weight:800;cursor:pointer}
 .vote-btn:hover{color:#fff}
-
-/* skills - floating balls */
-.skills-stage {
-  position: relative;
-  width: 100%;
-  height: 450px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.02);
-  overflow: hidden;
-}
-
-.skill-ball {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: radial-gradient(circle at top left, var(--accent), var(--accent-2));
-  box-shadow: 0 0 10px rgba(255,255,255,0.05);
-  cursor: grab;
-  user-select: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
 
 /* certificates */
 .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:12px}
@@ -179,71 +156,6 @@ form h3 {
 .btn:hover {
   background: linear-gradient(90deg, #004c99, #0066cc);
   transform: translateY(-2px);
-}
-
-.card {
-  background: #0a0a0a;
-  border-radius: 16px;
-  padding: 25px 30px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-  color: #ddd;
-}
-
-.hero-hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding: 40px 30px;
-  background: radial-gradient(circle at 20% 20%, #0b0b0b, #050505);
-}
-
-.hero-photo img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-  box-shadow: 0 0 30px rgba(0, 100, 255, 0.3);
-}
-
-.hero-intro {
-  max-width: 500px;
-  color: #ddd;
-}
-
-.small-card {
-  background: #0d0d0d;
-  border: 1px solid rgba(0, 120, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.emoji-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.emoji-btn {
-  background: #0d0d0d;
-  border: 1px solid rgba(0, 120, 255, 0.2);
-  color: #ddd;
-  transition: all 0.3s ease;
-  border-radius: 8px;
-}
-
-.emoji-btn:hover {
-  background: linear-gradient(90deg, #003366, #004c99);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-/* Accent variables */
-:root {
-  --accent: #004c99;
-  --accent-2: #0077ff;
 }
 
 .certs-grid {
@@ -345,7 +257,7 @@ form h3 {
   margin-top: 15px;
 }
 
-.vote-btn {
+.blog-section .vote-btn {
   border: none;
   background: #1b2233;
   color: #c9c9c9;
@@ -356,26 +268,26 @@ form h3 {
   transition: all 0.2s ease-in-out;
 }
 
-.vote-btn:hover {
+.blog-section .vote-btn:hover {
   transform: scale(1.05);
 }
 
-.vote-btn.agree {
+.blog-section .vote-btn.agree {
   background-color: rgba(0, 128, 0, 0.2);
   border: 1px solid #00ff88;
 }
 
-.vote-btn.agree:hover {
+.blog-section .vote-btn.agree:hover {
   background-color: #00ff88;
   color: #0b0e14;
 }
 
-.vote-btn.disagree {
+.blog-section .vote-btn.disagree {
   background-color: rgba(128, 0, 0, 0.2);
   border: 1px solid #ff4c4c;
 }
 
-.vote-btn.disagree:hover {
+.blog-section .vote-btn.disagree:hover {
   background-color: #ff4c4c;
   color: #0b0e14;
 }

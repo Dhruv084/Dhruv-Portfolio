@@ -225,8 +225,8 @@ export default function Resume() {
           }}
         >
           <iframe
-            src="/resume.pdf"
-            title="Dhruv Patel Resume"
+            src="/Dhruv_Resume.pdf"
+            title="Dhruv Resume"
             style={{
               width: "100%",
               height: "650px",
@@ -238,7 +238,7 @@ export default function Resume() {
 
         {/* Download Button */}
         <motion.a
-          href="/resume.pdf"
+          href="/Dhruv_Resume.pdf"
           download
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
